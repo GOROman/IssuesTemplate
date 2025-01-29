@@ -1,0 +1,51 @@
+name: 問題報告
+description: 問題の報告やサポート依頼
+title: ""
+labels: ["support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ 以下の記載は避けてください：
+        - 長文による文章説明
+        - お気持ち表明（感想、要望、謝罪など）
+
+        必要な情報を簡潔に記載してください
+  - type: textarea
+    id: env
+    attributes:
+      label: 環境
+      description: ハードウェア及びソフトウェアの構成
+      placeholder: |
+        - OS: Windows 11 Pro 22H2
+        - ブラウザ: Chrome 120.0.6099.130
+        - アプリバージョン: 1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 実施内容
+      description: 実行した手順
+      placeholder: |
+        1. アプリを起動
+        2. 設定画面を開く
+        3. 「保存」をクリック
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 結果
+      description: 実際に発生した結果
+      placeholder: エラーメッセージが表示される
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する結果
+      description: 本来期待される動作
+      placeholder: 設定が保存され、完了メッセージが表示される
+    validations:
+      required: true
