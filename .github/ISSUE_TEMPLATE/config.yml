@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "質問・相談（GitHub Issues ではなくフォーラムへ）"
+    url: "https://example.com/forum"
+    about: "一般的な質問・学習目的の相談はこちらをご利用ください。"
