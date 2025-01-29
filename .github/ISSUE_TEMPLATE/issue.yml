@@ -1,6 +1,6 @@
 name: 問題報告
 description: 問題の報告やサポート依頼
-title: ""
+title: "[Support]: "
 labels: ["support"]
 body:
   - type: markdown
