@@ -1,5 +1,49 @@
 blank_issues_enabled: false
 contact_links:
-  - name: "質問・相談（GitHub Issues ではなくフォーラムへ）"
-    url: "https://example.com/forum"
-    about: "一般的な質問・学習目的の相談はこちらをご利用ください。"
+  - name: 質問・サポート依頼
+    url: https://github.com/YOUR_REPO/discussions
+    about: 一般的な質問やサポートが必要な場合は Discussions を利用してください。
+
+issue_templates:
+  - name: バグ報告
+    description: バグを報告するためのテンプレート
+    labels: ["bug"]
+    body:
+      - type: textarea
+        id: system_configuration
+        attributes:
+          label: ハード及びソフトの構成
+          description: 使用しているハードウェアやソフトウェアの情報を簡潔に記入してください。
+          placeholder: 例）ESP32S3, Ubuntu 22.04, Python 3.10
+        validations:
+          required: true
+
+      - type: textarea
+        id: steps_to_reproduce
+        attributes:
+          label: 実施した内容
+          description: 問題を再現するために実施した手順を簡潔に記述してください。
+          placeholder: |
+            1. コードをコンパイル
+            2. デバイスを接続
+            3. コマンド `xyz` を実行
+        validations:
+          required: true
+
+      - type: textarea
+        id: actual_result
+        attributes:
+          label: 得られた結果
+          description: 実行後に得られた結果を記述してください。
+          placeholder: "例）エラーメッセージやログなど"
+        validations:
+          required: true
+
+      - type: textarea
+        id: expected_result
+        attributes:
+          label: 期待した結果
+          description: どのような結果を期待していたかを記述してください。
+          placeholder: "例）正常に動作し、エラーメッセージが表示されない"
+        validations:
+          required: true
