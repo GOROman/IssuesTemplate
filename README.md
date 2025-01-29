@@ -1,2 +1,1 @@
-# IssuesTemplate
-Super Issues Template
+# みんなのイシュー！！オラにくれ！！！！！！！！！！！！！！！！！！！！
